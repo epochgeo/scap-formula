@@ -30,7 +30,7 @@
 
 {#- Initialize oscap dictionary with defaults and pillar data #}
 {%- set oscap = {
-    'ds': salt.pillar.get('scap:lookup:oscap:ds') | default('openscap/ssg-' ~ ds_matcher ~ '-ds.xml', true),
+    'ds': salt.pillar.get('scap:lookup:oscap:ds') | default('openscap/ssg-al2023-ds.xml', true),
     'profile': salt.pillar.get('scap:lookup:oscap:profile') | default('common', true),
 } %}
 
